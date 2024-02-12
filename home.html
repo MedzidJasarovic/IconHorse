@@ -11,6 +11,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
   </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
   <body>
     <nav>
       <input type="checkbox" id="check" />
@@ -29,12 +34,67 @@
     <div class="homepage">
       <h1>
         Get any site's favicon with
-        <p id="ikona">Icon Horse</p>
+        <p class="ichorsetext">Icon Horse</p>
       </h1>
-      <p>
-        Confidently use Icon Horse and get bulletproof favicons. <br />
-        In case none can be found you will be provided with fallback favicons!
-      </p>
+      <!-- <div id="intro">
+        <p >
+          Confidently use Icon Horse and get bulletproof favicons. <br />
+          In case none can be found you will be provided with fallback favicons!
+        </p>
+
+        <p>So how could I use <p class="ichorsetext">IconHorse?</p></p>
+      </div> -->
+
+      <div id="intro">
+        <div class="paragraph-wrapper">
+          <p>
+            Confidently use Icon Horse and get bulletproof favicons. <br />
+            In case none can be found you will be provided with fallback
+            favicons!
+          </p>
+          <p id="question">
+            So how could I use <span class="ichorsetext">IconHorse?</span>
+          </p>
+        </div>
+      </div>
+      <!-- Cards section -->
+      <div class="cards">
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="images/homepageImage1.jpg" alt="Card Image 1" />
+          <div class="card-content">
+            <h2>Styled links</h2>
+            <p>
+              Visually inform your user of where the link will take them with an
+              icon
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="images/homepageImage2.jpg" alt="Card Image 2" />
+          <div class="card-content">
+            <h2>Dashboards</h2>
+            <p>
+              Make your dashboard display prettier by showing icons of all the
+              sites the user sees.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <img src="images/homepageImage3.jpg" alt="Card Image 3" />
+          <div class="card-content">
+            <h2>Default avatars</h2>
+            <p>
+              Display icons for users based on the @domain.com of their email
+              address.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
