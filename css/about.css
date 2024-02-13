@@ -20,6 +20,12 @@
   font-size: 20px;
   color: #303031;
 }
+
+@media (max-width: 1171px) {
+  .informacije p {
+    font-size: 14px;
+  }
+}
 .informacije p a {
   font-weight: bold;
 }

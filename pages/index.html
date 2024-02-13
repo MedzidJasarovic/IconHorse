@@ -20,16 +20,6 @@
 
   <body>
     <nav>
-      <div class="switch">
-        <input
-          id="language-toggle"
-          class="check-toggle check-toggle-round-flat"
-          type="checkbox"
-        />
-        <label for="language-toggle"></label>
-        <span style="margin-bottom: 20px" class="on">SR</span>
-        <span class="off">EN</span>
-      </div>
       <input type="checkbox" id="check" />
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
@@ -41,6 +31,18 @@
         <li><a href="../pages/about.html">About us</a></li>
         <li><a href="#">Contact us</a></li>
         <li><a href="#">Login</a></li>
+        <li>
+          <div class="switch">
+            <input
+              id="language-toggle"
+              class="check-toggle check-toggle-round-flat"
+              type="checkbox"
+            />
+            <label for="language-toggle"></label>
+            <span style="margin-bottom: 20px" class="on">SR</span>
+            <span class="off">EN</span>
+          </div>
+        </li>
       </ul>
     </nav>
     <div class="homepage">
@@ -62,10 +64,11 @@
           <p>
             Confidently use Icon Horse and get bulletproof favicons. <br />
             In case none can be found you will be provided with fallback
-            favicons!
-          </p>
-          <p id="question">
-            So how could I use <span class="ichorsetext">IconHorse?</span>
+            favicons! <br />
+            <span class="question"
+              >So how could I use
+              <span class="ichorsetext">IconHorse?</span></span
+            >
           </p>
         </div>
       </div>
