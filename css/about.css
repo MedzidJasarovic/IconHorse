@@ -1,0 +1,25 @@
+.aboutContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30vh;
+}
+.aboutContainer h1 {
+  color: #303031;
+}
+.informacije {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.informacije p {
+  padding: 20px;
+  font-size: 20px;
+  color: #303031;
+}
+.informacije p a {
+  font-weight: bold;
+}

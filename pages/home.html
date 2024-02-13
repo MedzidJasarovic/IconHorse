@@ -4,20 +4,32 @@
     <meta charset="utf-8" />
     <title>IconHorse</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/languagebtn.css" />
+
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
     />
   </head>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-    rel="stylesheet"
-  />
 
   <body>
     <nav>
+      <div class="switch">
+        <input
+          id="language-toggle"
+          class="check-toggle check-toggle-round-flat"
+          type="checkbox"
+        />
+        <label for="language-toggle"></label>
+        <span style="margin-bottom: 20px" class="on">SR</span>
+        <span class="off">EN</span>
+      </div>
       <input type="checkbox" id="check" />
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
@@ -25,8 +37,8 @@
       <label class="logo">IconHorse</label>
       <ul>
         <li><a class="active" href="#">Home</a></li>
-        <li><a href="#">Icons</a></li>
-        <li><a href="#">About us</a></li>
+        <li><a href="../pages/icons.html">Icons</a></li>
+        <li><a href="../pages/about.html">About us</a></li>
         <li><a href="#">Contact us</a></li>
         <li><a href="#">Login</a></li>
       </ul>
@@ -61,7 +73,7 @@
       <div class="cards">
         <!-- Card 1 -->
         <div class="card">
-          <img src="images/homepageImage1.jpg" alt="Card Image 1" />
+          <img src="../images/homepageImage1.jpg" alt="Card Image 1" />
           <div class="card-content">
             <h2>Styled links</h2>
             <p>
@@ -73,7 +85,7 @@
 
         <!-- Card 2 -->
         <div class="card">
-          <img src="images/homepageImage2.jpg" alt="Card Image 2" />
+          <img src="../images/homepageImage2.jpg" alt="Card Image 2" />
           <div class="card-content">
             <h2>Dashboards</h2>
             <p>
@@ -85,7 +97,7 @@
 
         <!-- Card 3 -->
         <div class="card">
-          <img src="images/homepageImage3.jpg" alt="Card Image 3" />
+          <img src="../images/homepageImage3.jpg" alt="Card Image 3" />
           <div class="card-content">
             <h2>Default avatars</h2>
             <p>
@@ -94,6 +106,10 @@
             </p>
           </div>
         </div>
+      </div>
+      <div class="getStarted">
+        Click&nbsp;<a href="../pages/icons.html">here</a
+        >&nbsp;to&nbsp;start&nbsp;now!
       </div>
     </div>
   </body>
