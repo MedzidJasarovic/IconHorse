@@ -95,6 +95,7 @@ h1 {
   /*bilo 600*/
   .card {
     flex: 0 0 calc(100% - 100px); /* Make cards full width on smaller screens */
+    padding-top: 20px;
   }
 }
 
@@ -132,3 +133,8 @@ body {
 .homepage {
   background-color: #f0f0f0;
 }
+
+/* body {
+  position: relative;
+  min-height: 100vh;
+} */
