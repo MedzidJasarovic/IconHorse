@@ -23,3 +23,34 @@
 .informacije p a {
   font-weight: bold;
 }
+body {
+  position: relative;
+  min-height: 100vh;
+}
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+}
+
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+
+  margin: 10px;
+  border-radius: 50%;
+  color: #f0f0f0;
+}
