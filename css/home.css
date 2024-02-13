@@ -96,6 +96,14 @@ h1 {
   .card {
     flex: 0 0 calc(100% - 100px); /* Make cards full width on smaller screens */
     padding-top: 20px;
+    margin: 10px;
+    width: 80%;
+  }
+}
+@media (max-width: 800px) {
+  /*bilo 600*/
+  .card img {
+    width: 90%;
   }
 }
 
