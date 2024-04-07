@@ -12,6 +12,7 @@
 }
 .container > * {
   margin-bottom: 20px; /* Adjust the value as needed */
+  margin-left: 10px;
 }
 
 .container img {
