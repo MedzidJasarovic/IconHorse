@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IconHorse</title>
-    <link rel="stylesheet" href="../css/icons.css" />
+
+    <link rel="stylesheet" href="../css/login.css" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/languagebtn.css" />
 
@@ -26,10 +27,10 @@
       <label class="logo">IconHorse</label>
       <ul>
         <li><a href="../pages/index.html">Home</a></li>
-        <li><a class="active" href="#">Icons</a></li>
+        <li><a href="../pages/icons.html">Icons</a></li>
         <li><a href="../pages/about.html">About us</a></li>
         <li><a href="../pages/contact.html">Contact us</a></li>
-        <li><a href="../pages/login.html">Login</a></li>
+        <li><a class="active" href="#">Login</a></li>
         <li>
           <div class="switch">
             <input
@@ -44,19 +45,32 @@
         </li>
       </ul>
     </nav>
-    <div class="ikone">
-      <div class="container">
-        <h1>Search for an icon of a site !</h1>
-        <h2>How do I do it?</h2>
-        <p>
-          Its simple, just enter the URL of the site ,and click "confirm" <br />
-          the placeholder might help you figure it out how its supposed to look
-        </p>
-        <input id="linksajta" type="text" placeholder="wikipedia.org" />
-        <img src="https://icon.horse/icon/wikipedia.org" alt="" />
-        <button id="changeSrcBtn">Confirm</button>
-      </div>
+    <div class="container">
+      <form id="form" action="/">
+        <h1>Registration</h1>
+        <div class="input-control">
+          <label for="username">Username</label>
+          <input autocomplete="off" id="username" name="username" type="text" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="email">Email</label>
+          <input autocomplete="off" id="email" name="email" type="text" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="password2">Password again</label>
+          <input id="password2" name="password2" type="password" />
+          <div class="error"></div>
+        </div>
+        <button type="submit">Sign Up</button>
+      </form>
     </div>
-    <script src="../JS/icons.js"></script>
+    <script src="../JS/formvalid.js"></script>
   </body>
 </html>
