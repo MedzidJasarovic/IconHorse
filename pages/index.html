@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
@@ -50,14 +50,6 @@
         Get any site's favicon with
         <p class="ichorsetext">Icon Horse</p>
       </h1>
-      <!-- <div id="intro">
-        <p >
-          Confidently use Icon Horse and get bulletproof favicons. <br />
-          In case none can be found you will be provided with fallback favicons!
-        </p>
-
-        <p>So how could I use <p class="ichorsetext">IconHorse?</p></p>
-      </div> -->
 
       <div id="intro">
         <div class="paragraph-wrapper">
@@ -72,9 +64,9 @@
           </p>
         </div>
       </div>
-      <!-- Cards section -->
+      
       <div class="cards">
-        <!-- Card 1 -->
+        
         <div class="card">
           <img src="../images/homepageImage1.jpg" alt="Card Image 1" />
           <div class="card-content">
@@ -86,7 +78,7 @@
           </div>
         </div>
 
-        <!-- Card 2 -->
+        
         <div class="card">
           <img src="../images/homepageImage2.jpg" alt="Card Image 2" />
           <div class="card-content">
@@ -98,7 +90,7 @@
           </div>
         </div>
 
-        <!-- Card 3 -->
+        
         <div class="card">
           <img src="../images/homepageImage3.jpg" alt="Card Image 3" />
           <div class="card-content">
@@ -115,5 +107,156 @@
         >&nbsp;to&nbsp;start&nbsp;now!
       </div>
     </div>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>IconHorse</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/languagebtn.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">IconHorse</label>
+      <ul>
+        <li>
+          <a class="active" href="#" data-en="Home" data-sr="Početna">Home</a>
+        </li>
+        <li>
+          <a href="../pages/icons.html" data-en="Icons" data-sr="Ikone"
+            >Icons</a
+          >
+        </li>
+        <li>
+          <a href="../pages/about.html" data-en="About us" data-sr="O nama"
+            >About us</a
+          >
+        </li>
+        <li>
+          <a
+            href="../pages/contact.html"
+            data-en="Contact us"
+            data-sr="Kontaktirajte nas"
+            >Contact us</a
+          >
+        </li>
+        <li>
+          <a href="../pages/login.html" data-en="Login" data-sr="Prijava"
+            >Login</a
+          >
+        </li>
+        <li>
+          <div class="switch">
+            <input
+              id="language-toggle"
+              class="check-toggle check-toggle-round-flat"
+              type="checkbox"
+            />
+            <label for="language-toggle"></label>
+            <span style="margin-bottom: 20px" class="on">SR</span>
+            <span class="off">EN</span>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="homepage">
+      <h1>
+        <span
+          data-en="Get any site's favicon with "
+          data-sr="Dobijte favicon bilo kog sajta sa "
+        ></span>
+        <p class="ichorsetext">Icon Horse</p>
+      </h1>
+
+      <div id="intro">
+        <div class="paragraph-wrapper">
+          <p>
+            <span
+              data-en="Confidently use Icon Horse and get bulletproof favicons. "
+              data-sr="Slobodno koristite Icon Horse i dobijajte neprobojne favicone. "
+            ></span>
+            <br />
+            <span
+              data-en="In case none can be found you will be provided with fallback favicons! "
+              data-sr="U slučaju da nijedan ne može biti pronađen, dobićete alternativne favicone! "
+            ></span>
+            <br />
+            <span
+              class="question"
+              data-en="So how could I use "
+              data-sr="Kako mogu koristiti "
+            ></span>
+            <span class="ichorsetext">IconHorse?</span>
+          </p>
+        </div>
+      </div>
+      <!-- Cards section -->
+      <div class="cards">
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="../images/homepageImage1.jpg" alt="Card Image 1" />
+          <div class="card-content">
+            <h2 data-en="Styled links" data-sr="Stilizovani linkovi"></h2>
+            <p
+              data-en="Visually inform your user of where the link will take them with an icon"
+              data-sr="Vizuelno obavestite korisnika gde će ih link odvesti ikonom"
+            ></p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="../images/homepageImage2.jpg" alt="Card Image 2" />
+          <div class="card-content">
+            <h2 data-en="Dashboards" data-sr="Kontrole"></h2>
+            <p
+              data-en="Make your dashboard display prettier by showing icons of all the sites the user sees."
+              data-sr="Ulepšajte prikaz kontrolne table prikazujući ikone svih sajtova koje korisnik vidi."
+            ></p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <img src="../images/homepageImage3.jpg" alt="Card Image 3" />
+          <div class="card-content">
+            <h2 data-en="Default avatars" data-sr="Podrazumevani avatari"></h2>
+            <p
+              data-en="Display icons for users based on the @domain.com of their email address."
+              data-sr="Prikažite ikone korisnicima na osnovu @domain.com njihove email adrese."
+            ></p>
+          </div>
+        </div>
+      </div>
+      <div class="getStarted">
+        <span data-en="Click&nbsp;" data-sr="Kliknite&nbsp;"></span>
+        <a href="../pages/icons.html" data-en="here" data-sr="ovde">here</a>
+        <span
+          data-en="&nbsp;to start now!"
+          data-sr="&nbsp;da počnete sada!"
+        ></span>
+      </div>
+    </div>
+
+    <script src="../JS/lang.js"></script>
   </body>
 </html>

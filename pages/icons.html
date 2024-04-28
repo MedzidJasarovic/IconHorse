@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -58,5 +58,99 @@
       </div>
     </div>
     <script src="../JS/icons.js"></script>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IconHorse</title>
+    <link rel="stylesheet" href="../css/icons.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/languagebtn.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">IconHorse</label>
+      <ul>
+        <li>
+          <a href="../pages/index.html" data-en="Home" data-sr="Početna"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a class="active" href="#" data-en="Icons" data-sr="Ikone">Icons</a>
+        </li>
+        <li>
+          <a href="../pages/about.html" data-en="About us" data-sr="O nama"
+            >About us</a
+          >
+        </li>
+        <li>
+          <a
+            href="../pages/contact.html"
+            data-en="Contact us"
+            data-sr="Kontaktirajte nas"
+            >Contact us</a
+          >
+        </li>
+        <li>
+          <a href="../pages/login.html" data-en="Login" data-sr="Prijava"
+            >Login</a
+          >
+        </li>
+        <li>
+          <div class="switch">
+            <input
+              id="language-toggle"
+              class="check-toggle check-toggle-round-flat"
+              type="checkbox"
+            />
+            <label for="language-toggle"></label>
+            <span style="margin-bottom: 20px" class="on">SR</span>
+            <span class="off">EN</span>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="ikone">
+      <div class="container">
+        <h1
+          data-en="Search for an icon of a site !"
+          data-sr="Pretražite ikone sajtova!"
+        >
+          Search for an icon of a site !
+        </h1>
+        <h2 data-en="How do I do it?" data-sr="Kako to radim?">
+          How do I do it?
+        </h2>
+        <p
+          data-en='Its simple, just enter the URL of the site, and click "confirm".'
+          data-sr='Jednostavno je, samo unesite URL sajta i kliknite na "potvrdi".'
+        >
+          Its simple, just enter the URL of the site ,and click "confirm"
+        </p>
+        <input id="linksajta" type="text" placeholder="wikipedia.org" />
+        <img src="https://icon.horse/icon/wikipedia.org" alt="" />
+        <button id="changeSrcBtn" data-en="Confirm" data-sr="Potvrdi">
+          Confirm
+        </button>
+      </div>
+    </div>
+    <script src="../JS/icons.js"></script>
+    <script src="../JS/lang.js"></script>
   </body>
 </html>

@@ -26,11 +26,32 @@
       </label>
       <label class="logo">IconHorse</label>
       <ul>
-        <li><a href="../pages/index.html">Home</a></li>
-        <li><a href="../pages/icons.html">Icons</a></li>
-        <li><a href="../pages/about.html">About us</a></li>
-        <li><a href="../pages/contact.html">Contact us</a></li>
-        <li><a class="active" href="#">Login</a></li>
+        <li>
+          <a href="../pages/index.html" data-en="Home" data-sr="Početna"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="../pages/icons.html" data-en="Icons" data-sr="Ikone"
+            >Icons</a
+          >
+        </li>
+        <li>
+          <a href="../pages/about.html" data-en="About us" data-sr="O nama"
+            >About us</a
+          >
+        </li>
+        <li>
+          <a
+            href="../pages/contact.html"
+            data-en="Contact us"
+            data-sr="Kontaktirajte nas"
+            >Contact us</a
+          >
+        </li>
+        <li>
+          <a class="active" href="#" data-en="Login" data-sr="Prijava">Login</a>
+        </li>
         <li>
           <div class="switch">
             <input
@@ -47,30 +68,42 @@
     </nav>
     <div class="container">
       <form id="form" action="/">
-        <h1>Registration</h1>
+        <h1 data-en="Registration" data-sr="Registracija">Registration</h1>
         <div class="input-control">
-          <label for="username">Username</label>
+          <label for="username" data-en="Username" data-sr="Korisnicko ime"
+            >Username</label
+          >
           <input autocomplete="off" id="username" name="username" type="text" />
           <div class="error"></div>
         </div>
         <div class="input-control">
-          <label for="email">Email</label>
+          <label for="email" data-en="Email" data-sr="Email">Email</label>
           <input autocomplete="off" id="email" name="email" type="text" />
           <div class="error"></div>
         </div>
         <div class="input-control">
-          <label for="password">Password</label>
+          <label for="password" data-en="Password" data-sr="Šifra"
+            >Password</label
+          >
           <input id="password" name="password" type="password" />
           <div class="error"></div>
         </div>
         <div class="input-control">
-          <label for="password2">Password again</label>
+          <label
+            for="password2"
+            data-en="Password again"
+            data-sr="Ponovite šifru"
+            >Password again</label
+          >
           <input id="password2" name="password2" type="password" />
           <div class="error"></div>
         </div>
-        <button type="submit">Sign Up</button>
+        <button type="submit" data-en="Sign up" data-sr="Prijavite se">
+          Sign Up
+        </button>
       </form>
     </div>
     <script src="../JS/formvalid.js"></script>
+    <script src="../JS/lang.js"></script>
   </body>
 </html>
