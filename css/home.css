@@ -129,16 +129,6 @@ body {
   flex-direction: column;
 }
 
-.getStarted {
-  position: absolute; /* Position the div absolutely */
-  bottom: 0; /* Position it at the bottom of the viewport */
-  width: 100%; /* Take up the full width */
-  text-align: center;
-  background-color: #f0f0f0;
-  padding: 20px;
-  font-weight: bold;
-}
-
 .homepage {
   background-color: #f0f0f0;
 }
