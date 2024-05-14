@@ -1,11 +1,13 @@
 #form {
-  width: 300px;
+  width: 30%;
+  min-width: 450px;
   margin: 20vh auto 0 auto;
   padding: 20px;
   background-color: whitesmoke;
   border-radius: 4px;
   font-size: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+  height: auto;
 }
 
 #form h1 {
@@ -39,7 +41,7 @@
   border-radius: 4px;
   display: block;
   font-size: 12px;
-  padding: 10px;
+  padding: 1rem;
   width: 100%;
 }
 
