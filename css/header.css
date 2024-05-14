@@ -29,6 +29,12 @@ label.logo {
   font-weight: bold;
   /* background-color: #0082e6; */
 }
+.logo a {
+  color: white;
+}
+.logo :hover {
+  background-color: #0082e6;
+}
 nav ul {
   float: right;
   margin-right: 20px;

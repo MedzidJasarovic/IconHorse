@@ -2,7 +2,7 @@ const form = document.getElementById("form");
 const username = document.getElementById("username");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
-const password2 = document.getElementById("password2");
+// const password2 = document.getElementById("password2");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -60,13 +60,15 @@ const validateInputs = () => {
     setError(password, "Password must be at least 8 character.");
   } else {
     setSuccess(password);
+    localStorage.setItem("loggedIn", true);
   }
 
-  if (password2Value === "") {
-    setError(password2, "Please confirm your password");
-  } else if (password2Value !== passwordValue) {
-    setError(password2, "Passwords doesn't match");
-  } else {
-    setSuccess(password2);
-  }
+  // if (password2Value === "") {
+  //   setError(password2, "Please confirm your password");
+  // } else if (password2Value !== passwordValue) {
+  //   setError(password2, "Passwords doesn't match");
+  // } else {
+  //   setSuccess(password2);
+  //   localStorage.setItem("loggedIn", true);
+  // }
 };

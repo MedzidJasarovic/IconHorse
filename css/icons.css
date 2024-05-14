@@ -11,7 +11,7 @@
   flex-direction: column;
 }
 .container > * {
-  margin-bottom: 20px; /* Adjust the value as needed */
+  margin-bottom: 20px;
 }
 .container p {
   margin-left: 20px;
