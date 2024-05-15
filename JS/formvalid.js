@@ -2,6 +2,7 @@ const form = document.getElementById("form");
 const username = document.getElementById("username");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
+var lang = localStorage.getItem("language");
 // const password2 = document.getElementById("password2");
 
 form.addEventListener("submit", (e) => {
@@ -38,37 +39,83 @@ const validateInputs = () => {
   const usernameValue = username.value.trim();
   const emailValue = email.value.trim();
   const passwordValue = password.value.trim();
-  // const password2Value = password2.value.trim();
 
   if (usernameValue === "") {
-    setError(username, "Username is required");
+    if (lang === "en") {
+      setError(username, "Username is required");
+    } else {
+      setError(username, "Korisnicko ime ne sme biti prazno");
+    }
   } else {
     setSuccess(username);
   }
 
   if (emailValue === "") {
-    setError(email, "Email is required");
+    if (lang === "en") {
+      setError(email, "Email is required");
+    } else {
+      setError(email, "Email ne sme biti prazan");
+    }
   } else if (!isValidEmail(emailValue)) {
-    setError(email, "Provide a valid email address");
+    if (lang === "en") {
+      setError(email, "Provide a valid email address");
+    } else {
+      setError(email, "Unesite validnu email adresu");
+    }
   } else {
     setSuccess(email);
   }
 
   if (passwordValue === "") {
-    setError(password, "Password is required");
-  } else if (passwordValue.length < 8) {
-    setError(password, "Password must be at least 8 character.");
+    if (lang === "en") {
+      setError(password, "Password is required");
+    } else {
+      setError(password, "Sifra ne sme biti prazna");
+    }
   } else {
     setSuccess(password);
     localStorage.setItem("loggedIn", true);
   }
 
-  // if (password2Value === "") {
-  //   setError(password2, "Please confirm your password");
-  // } else if (password2Value !== passwordValue) {
-  //   setError(password2, "Passwords doesn't match");
-  // } else {
-  //   setSuccess(password2);
-  //   localStorage.setItem("loggedIn", true);
-  // }
+  //-----------------------------------za naloge------------------------
+  // https://github.com/MedzidJasarovic/IconHorse/blob/main/accounts.json
+  //--------------------------------------------------------------------
+
+  if (usernameValue && passwordValue && emailValue) {
+    fetch(
+      "https://github.com/MedzidJasarovic/IconHorse/blob/main/accounts.json"
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        const unetiPass = hex_md5(passwordValue);
+        var users = data.users;
+        users = users.filter((el) => {
+          return el.username == usernameValue;
+        });
+        if (users.lenght >= 1) {
+          let flag = true;
+          for (let i = 0; i < users.lenght; i++) {
+            if (users[i].password == unetiPass) {
+              location.href = "index.html";
+              flag = !flag;
+              localStorage.setItem("loggedIn", true);
+              break;
+            }
+          }
+          if (flag) {
+            if (lang === "en") {
+              setError(password, "Wrong password");
+            } else {
+              setError(password, "Pogresna sifra");
+            }
+          } else {
+            if (lang === "en") {
+              setError(username, "Wrong username");
+            } else {
+              setError(username, "Pogresno korisnicko ime");
+            }
+          }
+        }
+      });
+  }
 };

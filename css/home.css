@@ -9,7 +9,6 @@ h1 {
 }
 #intro {
   display: flex;
-  /* flex-wrap: wrap;  */
   font-size: 25px;
   height: 45vh;
   flex-direction: column;

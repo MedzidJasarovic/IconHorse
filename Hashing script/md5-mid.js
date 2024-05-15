@@ -209,3 +209,8 @@ function safe_add(a, d) {
 function bit_rol(a, b) {
   return (a << b) | (a >>> (32 - b));
 }
+// let sifra = "volimikonice";
+// console.log(hex_md5(sifra));
+
+//Pri loggovanju sajt cita naloge iz accounts.json
+//t.txt sluzi za testiranje jer u json file ne mogu da se pisu komentari, a sifre se lako zaboravljaju
