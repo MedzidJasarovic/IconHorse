@@ -3,7 +3,6 @@ const username = document.getElementById("username");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 var lang = localStorage.getItem("language");
-// const password2 = document.getElementById("password2");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -46,9 +45,10 @@ const validateInputs = () => {
     } else {
       setError(username, "Korisnicko ime ne sme biti prazno");
     }
-  } else {
-    setSuccess(username);
   }
+  // else {
+  //   setSuccess(username);
+  // }
 
   if (emailValue === "") {
     if (lang === "en") {
@@ -74,7 +74,6 @@ const validateInputs = () => {
     }
   } else {
     setSuccess(password);
-    localStorage.setItem("loggedIn", true);
   }
 
   //-----------------------------------za naloge------------------------
@@ -82,38 +81,47 @@ const validateInputs = () => {
   //--------------------------------------------------------------------
 
   if (usernameValue && passwordValue && emailValue) {
-    fetch(
-      "https://cors-anywhere.herokuapp.com/https://raw.githubusercontent.com/MedzidJasarovic/IconHorse/main/accounts.json"
-    )
+    fetch("https://medzidjasarovic.github.io/IconHorse/accounts.json")
       .then((res) => res.json())
       .then((data) => {
         const unetiPass = hex_md5(passwordValue);
-        var users = data.users;
-        users = users.filter((el) => {
+        console.log(unetiPass);
+        var korisnici = data.users;
+
+        korisnici = korisnici.filter((el) => {
           return el.username == usernameValue;
         });
-        if (users.lenght >= 1) {
+
+        // do ovde radi
+
+        if (korisnici.length >= 1) {
           let flag = true;
-          for (let i = 0; i < users.lenght; i++) {
-            if (users[i].password == unetiPass) {
-              location.href = "index.html";
-              flag = !flag;
+          for (let i = 0; i < korisnici.length; i++) {
+            if (korisnici[i].password == unetiPass) {
               localStorage.setItem("loggedIn", true);
+              flag = !flag;
+              location.href = "index.html";
+
               break;
             }
+            break;
           }
           if (flag) {
             if (lang === "en") {
               setError(password, "Wrong password");
+              setSuccess(username);
             } else {
               setError(password, "Pogresna sifra");
+              setSuccess(username);
             }
+          }
+        } else {
+          if (lang === "en") {
+            setError(username, "Wrong username");
+            setError(password, "Doesent match any user");
           } else {
-            if (lang === "en") {
-              setError(username, "Wrong username");
-            } else {
-              setError(username, "Pogresno korisnicko ime");
-            }
+            setError(username, "Pogresno korisnicko ime");
+            setError(password, "Ne postoji korisnik");
           }
         }
       });
