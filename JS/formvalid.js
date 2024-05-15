@@ -83,7 +83,7 @@ const validateInputs = () => {
 
   if (usernameValue && passwordValue && emailValue) {
     fetch(
-      "https://github.com/MedzidJasarovic/IconHorse/blob/main/accounts.json"
+      "https://cors-anywhere.herokuapp.com/https://raw.githubusercontent.com/MedzidJasarovic/IconHorse/main/accounts.json"
     )
       .then((res) => res.json())
       .then((data) => {
