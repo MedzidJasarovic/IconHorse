@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="../images/logozasajt.png" type="image/png" />
   </head>
   <body>
     <nav>
@@ -24,7 +25,19 @@
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
       </label>
-      <label class="logo">IconHorse</label>
+      <label class="logo">
+        <a
+          href="../pages/index.html"
+          style="text-decoration: none; color: inherit"
+        >
+          <img
+            src="../images/logozasajt.png"
+            alt="IconHorse Logo"
+            style="height: 40px; vertical-align: middle; margin-right: 10px"
+          />
+          IconHorse
+        </a>
+      </label>
       <ul>
         <li>
           <a href="../pages/index.html" data-en="Home" data-sr="Početna"
@@ -68,7 +81,7 @@
     </nav>
     <div class="container">
       <form id="form" action="/">
-        <h1 data-en="Registration" data-sr="Registracija">Registration</h1>
+        <h1 data-en="Log in" data-sr="Registracija">Log in</h1>
         <div class="input-control">
           <label for="username" data-en="Username" data-sr="Korisnicko ime"
             >Username</label
@@ -88,24 +101,14 @@
           <input id="password" name="password" type="password" />
           <div class="error"></div>
         </div>
-        <!-- <div class="input-control">
-          <label
-            for="password2"
-            data-en="Password again"
-            data-sr="Ponovite šifru"
-            >Password again</label
-          >
-          <input id="password2" name="password2" type="password" />
-          <div class="error"></div>
-        </div> -->
-        <button type="submit" data-en="Sign up" data-sr="Prijavite se">
-          Sign Up
+
+        <button type="submit" data-en="Sign in" data-sr="Prijavite se">
+          Sign in
         </button>
       </form>
     </div>
     <script src="../JS/formvalid.js"></script>
     <script src="../JS/lang.js"></script>
-    <script src="../JS/login.js"></script>
     <script type="text/javascript" src="../Hashing script/md5-mid.js"></script>
   </body>
 </html>
